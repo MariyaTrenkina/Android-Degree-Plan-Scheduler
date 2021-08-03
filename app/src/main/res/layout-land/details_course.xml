@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/courseDetailsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="2dp"
+        android:background="#0A1247"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Course Details"
+        app:titleTextColor="#FFFFFF" />
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="96dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="150dp"
+        android:background="#FFFFFF"
+        android:onClick="saveBtn"
+        android:text="Save"
+        app:backgroundTint="#1D2A71"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="96dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="150dp"
+        android:background="#FFFFFF"
+        android:onClick="cancelBtn"
+        android:text="Cancel"
+        app:backgroundTint="#1D2A71"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="32dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="150dp"
+        android:background="#FFFFFF"
+        android:drawableTop="@drawable/ic_delete"
+        android:onClick="deleteBtn"
+        app:backgroundTint="#E91E63"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        tools:ignore="OnClick" />
+
+
+
+    <EditText
+        android:id="@+id/courseTitleTxtBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Course Title"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/courseStartCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="200dp"
+        android:text="Course Start"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".15" />
+
+    <CheckBox
+        android:id="@+id/courseEndCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginLeft="292dp"
+        android:layout_marginTop="200dp"
+        android:text="Course End"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".15" />
+
+    <TextView
+        android:id="@+id/reminderTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="200dp"
+        android:text="Reminders"
+        android:textColor="#01051B"
+        android:textSize="18sp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".15" />
+
+    <Spinner
+        android:id="@+id/statusSpinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="116dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".1"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="116dp"
+        android:text="Status"
+        android:textColor="#01051B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".075"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="160dp"
+        android:text="Dates"
+        android:textColor="#01051B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/untilTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintWidth_percent=".05"
+        android:layout_marginStart="228dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="164dp"
+        android:text="until"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/courseStartDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".125"
+        app:layout_constraintWidth_percent=".15"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:inputType="date"
+        android:onClick="startDateBtn"
+        android:text="mm/dd/yyyy"
+        android:textSize="12sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/courseEndDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".125"
+        app:layout_constraintWidth_percent=".15"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:inputType="date"
+        android:onClick="endDateBtn"
+        android:text="mm/dd/yyyy"
+        android:textSize="12sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".05"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:text="Title"
+        android:textColor="#01051B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneSMSTxtBox"
+        android:layout_width="117dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="240dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="Enter phone # to share notes"
+        android:inputType="phone"
+        android:textSize="12sp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".2" />
+
+    <EditText
+        android:id="@+id/notesTxtBox"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="236dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textPersonName"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="77dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginLeft="328dp"
+        android:layout_marginTop="240dp"
+        android:onClick="shareBtn"
+        android:text="SHARE"
+        android:textColor="#020622"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#F8F5F5"
+        android:textSize="10sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".1" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="72dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="244dp"
+        android:text="Notes"
+        android:textColor="#01051B"
+        android:textSize="18sp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".15" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/assessmentsRecyclerView"
+        android:layout_width="165dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="412dp"
+        android:layout_marginLeft="412dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/assessmentsTextView"
+        android:layout_width="107dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="412dp"
+        android:layout_marginLeft="412dp"
+        android:layout_marginTop="72dp"
+        android:text="Assessments"
+        android:textColor="#01051B"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mentorsRecyclerView"
+        android:layout_width="156dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="584dp"
+        android:layout_marginLeft="584dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mentorsTextView"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="584dp"
+        android:layout_marginLeft="584dp"
+        android:layout_marginTop="72dp"
+        android:text="Mentor"
+        android:textColor="#01051B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mentorsTextView2"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="660dp"
+        android:layout_marginLeft="660dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center|left"
+        android:text="(Choose one)"
+        android:textColor="#01051B"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapplication">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C196_Mariya_Trenkina">
+        <activity android:screenOrientation="sensor" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".TermDetailModify">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".TermDetailAdd">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".TermList">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".CourseDetailModify">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".CourseDetailAdd">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".CourseList" />
+
+        <activity android:screenOrientation="sensor"  android:name=".AssessmentDetailModify">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".AssessmentDetailAdd">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".AssessmentList" />
+
+        <activity android:screenOrientation="sensor"  android:name=".MentorDetailModify">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".MentorDetailAdd">
+        </activity>
+        <activity android:screenOrientation="sensor"  android:name=".MentorList" />
+        <receiver android:name=".AlarmReceiver" />
+    </application>
+
+</manifest>
